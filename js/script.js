@@ -18,3 +18,22 @@ if(curtido == false){
 }
 
 document.getElementById("likeBtn").addEventListener("click", curtir);
+
+function descurtir() {
+  
+if(descurtido == false){
+  likeCount++;
+  curtido = true;
+  document.getElementById("likeCount").innerText = deslikeCount;
+}else{
+  deslikeCount--;
+  curtido = false;
+  document.getElementById("likeCount").innerText = likeCount;
+
+}
+
+
+}
+
+document.getElementById("likeBtn").addEventListener("click", descurtir);
+
